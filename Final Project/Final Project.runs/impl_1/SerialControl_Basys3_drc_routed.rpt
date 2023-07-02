@@ -1,0 +1,66 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Apr 29 21:34:38 2022
+| Host         : LAPTOP-S64ENB4O running 64-bit major release  (build 9200)
+| Command      : report_drc -file SerialControl_Basys3_drc_routed.rpt -pb SerialControl_Basys3_drc_routed.pb -rpx SerialControl_Basys3_drc_routed.rpx
+| Design       : SerialControl_Basys3
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 6          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net SYSTEM_WORKINGS/INPUT_RECEIVER/E[0] is a gated clock net sourced by a combinational pin SYSTEM_WORKINGS/INPUT_RECEIVER/nextState_reg[3]_i_2/O, cell SYSTEM_WORKINGS/INPUT_RECEIVER/nextState_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net SYSTEM_WORKINGS/INPUT_RECEIVER/currentState_reg[0] is a gated clock net sourced by a combinational pin SYSTEM_WORKINGS/INPUT_RECEIVER/digitOneEn_reg_i_2/O, cell SYSTEM_WORKINGS/INPUT_RECEIVER/digitOneEn_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net SYSTEM_WORKINGS/INPUT_RECEIVER/currentState_reg[3]_0[0] is a gated clock net sourced by a combinational pin SYSTEM_WORKINGS/INPUT_RECEIVER/ledMode_reg[1]_i_2/O, cell SYSTEM_WORKINGS/INPUT_RECEIVER/ledMode_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net SYSTEM_WORKINGS/INPUT_RECEIVER/currentState_reg[3]_1 is a gated clock net sourced by a combinational pin SYSTEM_WORKINGS/INPUT_RECEIVER/digitTwoEn_reg_i_2/O, cell SYSTEM_WORKINGS/INPUT_RECEIVER/digitTwoEn_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net SYSTEM_WORKINGS/digitFourEn_reg_i_2_n_0 is a gated clock net sourced by a combinational pin SYSTEM_WORKINGS/digitFourEn_reg_i_2/O, cell SYSTEM_WORKINGS/digitFourEn_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net SYSTEM_WORKINGS/digitThreeEn_reg_i_2_n_0 is a gated clock net sourced by a combinational pin SYSTEM_WORKINGS/digitThreeEn_reg_i_2/O, cell SYSTEM_WORKINGS/digitThreeEn_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

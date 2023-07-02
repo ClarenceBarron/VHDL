@@ -1,0 +1,114 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Apr 29 21:34:23 2022
+| Host         : LAPTOP-S64ENB4O running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SerialControl_Basys3_control_sets_placed.rpt
+| Design       : SerialControl_Basys3
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    36 |
+|    Minimum number of control sets                        |    36 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   229 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    36 |
+| >= 0 to < 4        |    30 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            8 |
+| No           | No                    | Yes                    |              39 |           14 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              40 |           28 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------+-------------------------------------------+------------------+------------------+----------------+--------------+
+|                       Clock Signal                       |               Enable Signal               | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------------------+-------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[13]_i_1_n_0          | btnD_IBUF        |                1 |              1 |         1.00 |
+|  SYSTEM_WORKINGS/INPUT_RECEIVER/currentState_reg[0]      |                                           |                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[8]_i_1_n_0           | btnD_IBUF        |                1 |              1 |         1.00 |
+|  SYSTEM_WORKINGS/INPUT_RECEIVER/currentState_reg[3]_1    |                                           |                  |                1 |              1 |         1.00 |
+|  SYSTEM_WORKINGS/digitThreeEn_reg_i_2_n_0                |                                           |                  |                1 |              1 |         1.00 |
+|  SYSTEM_WORKINGS/digitFourEn_reg_i_2_n_0                 |                                           |                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[9]_i_1_n_0           | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[6]_i_1_n_0           | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/INPUT_RECEIVER/dataOut[7] | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/INPUT_RECEIVER/dataOut[0] | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/INPUT_RECEIVER/dataOut[6] | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/INPUT_RECEIVER/dataOut[1] | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/INPUT_RECEIVER/dataOut[5] | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/INPUT_RECEIVER/dataOut[2] | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/INPUT_RECEIVER/dataOut[4] | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/INPUT_RECEIVER/dataOut[3] | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[14]_i_1_n_0          | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[5]_i_1_n_0           | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[7]_i_1_n_0           | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[15]_i_1_n_0          | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[2]_i_1_n_0           | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[0]_i_1_n_0           | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[1]_i_1_n_0           | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[3]_i_1_n_0           | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[4]_i_1_n_0           | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[10]_i_1_n_0          | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[11]_i_1_n_0          | btnD_IBUF        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/leds[12]_i_1_n_0          | btnD_IBUF        |                1 |              1 |         1.00 |
+|  SYSTEM_WORKINGS/INPUT_RECEIVER/currentState_reg[3]_0[0] |                                           |                  |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                                           |                                           |                  |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/digitTwoEn                | btnD_IBUF        |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/digitThreeEn              | btnD_IBUF        |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/digitFourEn               | btnD_IBUF        |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                           | SYSTEM_WORKINGS/digitOneEn                | btnD_IBUF        |                1 |              4 |         4.00 |
+|  SYSTEM_WORKINGS/INPUT_RECEIVER/E[0]                     |                                           |                  |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                                           |                                           | btnD_IBUF        |               14 |             39 |         2.79 |
++----------------------------------------------------------+-------------------------------------------+------------------+------------------+----------------+--------------+
+
+
