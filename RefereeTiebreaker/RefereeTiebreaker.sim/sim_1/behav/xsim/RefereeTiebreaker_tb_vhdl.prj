@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RefereeTiebreaker.srcs/sources_1/new/refereeTiebreaker.vhd" \
+"../../../../RefereeTiebreaker.srcs/sim_1/new/RefereeTiebreaker_tb.vhd" \
+
+# Do not sort compile order
+nosort
